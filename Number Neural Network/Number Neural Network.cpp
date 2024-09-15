@@ -72,7 +72,7 @@ void softmax()
 
 void readTrainingData()
 {
-	ifstream file("C:/Users/Lenovo/OneDrive/Desktop/Coding/C++/VS/Number_Neural_Network/Dataset/train-images.idx3-ubyte",ios::binary);
+	ifstream file("../Dataset/train-images.idx3-ubyte",ios::binary);
 
 	vector<unsigned char> header(16);
 	file.read((char*)(header.data()), 16);
@@ -90,7 +90,7 @@ void readTrainingData()
 
 void readLabels()
 {
-	ifstream file("C:/Users/Lenovo/OneDrive/Desktop/Coding/C++/VS/Number_Neural_Network/Dataset/train-labels.idx1-ubyte");
+	ifstream file("../Dataset/train-labels.idx1-ubyte");
 
 	vector<unsigned char> header(8);
 	file.read((char*)(header.data()), 8);
